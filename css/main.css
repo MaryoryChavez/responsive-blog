@@ -1,0 +1,260 @@
+/*------------------------------------------- GENERALES -------------------------------------------*/
+
+.clearfix {
+	display: table;
+}
+.clearfix:after {
+	content:" ";
+	clear:both;
+}
+
+html, body{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2d2735;
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.row{
+    width: 100%;
+    margin: 0px 0;
+}
+
+/*------------------------------------------- HEADER -------------------------------------------*/
+
+header{
+        |width: 100%;
+        height: 60px;
+        background: #1c1821;
+        |color: #fff;
+    }
+
+.logo{
+    width: 200px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.menu{
+    |margin-top: 20px;
+    float: right;
+    margin-top: -60px;
+}
+
+.menu li{
+ display: inline-block;
+    color:#fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    margin: auto 6px;
+    font-style: italic;
+    font-variant:small-caps;
+}
+
+/*------------------------------------------- SECTION HERO -------------------------------------------*/
+
+.hero{
+ padding: 25px 0;
+}
+
+.hero .fondo{
+    background: url(../image/header-image.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 300px;
+    |position: relative;
+
+}
+
+.caja{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.texto{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.texto h1{
+    font-family: "Courgette";
+    font-size: 2.5em;
+    color:#f7ba6a;
+    padding-top: 20px;
+    margin: auto 200px;
+    background-color: #1c1821;
+}
+
+.texto p{
+    color: #fff;
+    padding: 20px;
+    margin: auto 200px;
+    background-color: #1c1821;
+}
+
+/*------------------------------------------- SECTION MOSTRADOR -------------------------------------------*/
+
+.mostrador{
+    padding-bottom: 25px;
+}
+
+.col-1-3{
+    width: 33.33333%;
+    float: left;
+}
+
+.ventana{
+    margin: 0 5px;
+    text-align: center;
+    background-color: #1c1821;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.mostrador img{
+    width: 100%;
+}
+
+.ventana p{
+    font-size: 0.9em;
+    margin: 0.5em;
+}
+
+ .ventana p:nth-child(2){
+    color: #f7ba6a;
+     font-family: "Courgette";
+     font-weight: 600;
+     font-size: 1em;
+}
+
+/*------------------------------------------- SECTION BLOG -------------------------------------------*/
+
+.col-1-7{
+    width: 57%;
+    float: left;
+    margin-left: 5px;
+}
+
+.col-1-5{
+    width: 40%;
+    float: left;
+    margin-left: 15px;
+}
+
+.blog{
+    padding-bottom: 25px;
+        font-family: 'Open Sans', sans-serif;
+
+}
+
+.blog img{
+    width: 100%;
+}
+
+.on1, .on2{
+    background-color: #1c1821;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.on1 p{
+    font-size: 0.8em;
+    padding: 0 10px;
+}
+
+.on2 p{
+    font-size: 0.8em;
+    padding: 0 10px;
+}
+
+.on1 p:nth-child(2){
+    text-align: center;
+    color: #f7ba6a;
+     font-family: "Courgette";
+     font-weight: 600;
+     font-size: 1em;
+}
+
+.on2 p:nth-child(1){
+    text-align: center;
+    color: #f7ba6a;
+     font-family: "Courgette";
+     font-weight: 600;
+     font-size: 1em;
+}
+
+.on1 p:nth-child(3){
+    text-align: center;
+}
+
+.on2 p:nth-child(3){
+    text-align: center;
+}
+
+form{
+    background-color: #1c1821;
+    padding: 20px 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.buscar{
+    background-color: #2d2735;
+    padding: 5px 45px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Responsive */
+
+@media screen and (min-width : 801px) {
+    header .icon-menu{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .menu {
+        display: none;
+    }
+    .container {
+        width: 95%;
+    }
+
+
+    .hero .caja .texto{
+        width: 90%;
+    }
+
+    .texto h1{
+        margin: 0% 5%;
+        padding-top: 10%;
+    }
+    .texto p {
+        margin: 0 5%;
+    }
+    header .icon-menu {
+        display: inline-block;
+        float: right;
+        margin-top: -50px;
+        color: white;
+    }
+    .col-1-3, .col-1-7, .col-1-5 {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    .col-1-5 {
+        display: none;
+    }
+}
